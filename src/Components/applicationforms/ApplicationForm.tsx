@@ -51,7 +51,7 @@ const ApplicationForm: React.FC = () => {
 
     try {
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const res = await axios.post('http://localhost:8080/api/applications/submit', form, {
+      const res = await axios.post('https://school-admission-system-production.up.railway.app/api/applications/submit', form, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

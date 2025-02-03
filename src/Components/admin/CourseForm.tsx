@@ -19,7 +19,7 @@ const CourseForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/api/courses/create', courseData);
+      const response = await axios.post('https://school-admission-system-production.up.railway.app/api/courses/create', courseData);
       console.log('Course created successfully', response.data);
       setMessage('Course created successfully!');
       setCourseData({

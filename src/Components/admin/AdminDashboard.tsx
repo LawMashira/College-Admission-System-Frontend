@@ -35,7 +35,7 @@ const AdminDashboard: React.FC = () => {
   // Fetch all applicants from the backend
   const fetchApplicants = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/admin/applicants/all');
+      const response = await axios.get('https://school-admission-system-production.up.railway.app/api/applicants/all');
       setApplicants(response.data);
     } catch (error) {
       console.error('Error fetching applicants', error);
